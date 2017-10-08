@@ -1,0 +1,15 @@
+<div class="row">
+    <ol>
+      <table class="table">
+        <tbody>
+          <tr ng-repeat="item in list">
+              <td>{{item.name}}</td>
+              <td>{{item.short_name}}</td>
+              <td>
+                <button class="btn btn-primary" ng-click="onRemove({index:$index})">Narrow It Down For Me!</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </ol>
+</div>
